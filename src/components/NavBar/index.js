@@ -1,6 +1,4 @@
-import { useEffect, useState } from 'react'
 import { FaBars } from 'react-icons/fa'
-import { animateScroll as scroll } from 'react-scroll'
 
 import LogoHeader from '../../images/logo-header.svg'
 
@@ -16,30 +14,11 @@ import {
 } from './NavbarElements'
 
 const Navbar = ({ toggle }) => {
-  const [scrollNav, setScrollNav] = useState(false)
-
-  const changeNav = () => {
-    if (window.scrollY >= 80) {
-      return setScrollNav(true)
-    }
-    return setScrollNav(false)
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', changeNav)
-
-    return () => window.removeEventListener('scroll', changeNav)
-  }, [])
-
-  const toggleHome = () => {
-    scroll.scrollToTop()
-  }
-
   return (
     <>
-      <Nav scrollNav={scrollNav}>
+      <Nav>
         <NavbarContainer>
-          <NavLogo to="/" onClick={toggleHome}>
+          <NavLogo to="/">
             <LogoImage src={LogoHeader} alt="React Logo" />
           </NavLogo>
           <MobileIcon onClick={toggle}>

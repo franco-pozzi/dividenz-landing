@@ -2,14 +2,14 @@ import styled from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
-  height: 80px;
-  margin-top: -80px;
+  background: #fff;
+  height: 80px;  
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 10;
   min-width: 250px;
@@ -88,9 +88,9 @@ export const NavLinks = styled(LinkR)`
   height: 100%;
   cursor: pointer;
   font-weight: bold;
-  line-height: 1.75;
+  line-height: 1.75; 
 
-  &.active {
-    border-bottom: 3px solid #01bf71;
-  }
+  &:hover {
+    background: linear-gradient(0.5turn,transparent,transparent 55%,#00D7A8 52%,#00D7A8 0%,transparent 67%);
+}
 `

@@ -41,13 +41,17 @@ export const SidebarWrapper = styled.div`
   @media screen and (min-width: 820px) {
     margin-top: 25%;
   }
+
+  @media screen and (min-height: 800px) {
+    margin-top: auto;
+  }
 `
 
 export const SidebarMenu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 60px);
-  text-align: center;
+  justify-items: center;
 
   @media screen and (min-width: 820px) {
     grid-template-rows: repeat(4, 100px);
@@ -68,9 +72,9 @@ export const SidebarLink = styled(LinkR)`
   color: #272727;
 
   &:hover {
-    color: #01bf71;
-    transition: 0.2s ease-in-out;
-  }
+    color: #231f20;
+    border-bottom: 2px solid #231f20;
+  }  
 
   @media screen and (min-width: 820px) {
     font-size: 35px;
