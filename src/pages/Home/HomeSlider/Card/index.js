@@ -4,8 +4,9 @@ import {
     HeadLine,
     ListContainer,
     ListItem,
-    ArrowRight
-
+    ArrowRight,
+    BtnWrapper,
+    CardBtn,
 } from './CardElements'
 
 
@@ -24,6 +25,9 @@ const Card = ({
                     <ListItem><ArrowRight />{textOne}</ListItem>
                     <ListItem><ArrowRight />{textTwo}</ListItem>
                 </ListContainer>
+                <BtnWrapper>
+                    <CardBtn to='/contacto'>Contactanos</CardBtn>
+                </BtnWrapper>
             </CardContainer>
         </>
     );

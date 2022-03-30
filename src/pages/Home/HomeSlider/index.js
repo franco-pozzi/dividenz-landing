@@ -29,13 +29,16 @@ export const HomeSlider = () => {
     return (
         <HomeCarouselSection>
             <Carousel
-                autoPlay={false}
+                autoPlay={true}
+                swipeable={false}
                 interval={5000}
+                transitionTime={1500}
                 infiniteLoop={true}
                 showArrows={false}
                 showStatus={false}
                 showIndicators={false}
                 showThumbs={false}
+                animationHandler={'fade'}
             >
                 {CardArray.map((carousel, i) => (
                     <Card {...carousel} key={i} />
