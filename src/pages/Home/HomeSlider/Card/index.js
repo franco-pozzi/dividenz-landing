@@ -5,8 +5,6 @@ import {
     ListContainer,
     ListItem,
     ArrowRight,
-    BtnWrapper,
-    CardBtn,
 } from './CardElements'
 
 
@@ -25,9 +23,6 @@ const Card = ({
                     <ListItem><ArrowRight />{textOne}</ListItem>
                     <ListItem><ArrowRight />{textTwo}</ListItem>
                 </ListContainer>
-                <BtnWrapper>
-                    <CardBtn to='/contacto'>Contactanos</CardBtn>
-                </BtnWrapper>
             </CardContainer>
         </>
     );

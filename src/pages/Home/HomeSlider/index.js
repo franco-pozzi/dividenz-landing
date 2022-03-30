@@ -7,7 +7,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import ImgSliderOne from '../../../images/home-slider-one.jpg'
 import ImgSliderTwo from '../../../images/home-slider-two.jpg'
 
-import { HomeCarouselSection } from './HomeSliderElements'
+import { HomeCarouselSection, BtnWrapper, CardBtn } from './HomeSliderElements'
 
 const CardArray = [
     {
@@ -44,6 +44,9 @@ export const HomeSlider = () => {
                     <Card {...carousel} key={i} />
                 ))}
             </Carousel>
+            <BtnWrapper>
+                <CardBtn href="https://api.whatsapp.com/send?phone=5491168463392&text=Hola!%20Quisiera%20m%C3%A1s%20informaci%C3%B3n.">Contactanos</CardBtn>
+            </BtnWrapper>
         </HomeCarouselSection>
     )
 }
